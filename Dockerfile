@@ -5,8 +5,8 @@ MAINTAINER gotoeasy <gotoeasy@163.com>
 
 # 环境变量
 ENV DEBIAN_FRONTEND=noninteractive \
-    SIZE=1024x768 \
-    PASSWD=123456 \
+    SIZE=1366x768 \
+    PASSWD=112233.. \
     TZ=Asia/Shanghai \
     LANG=zh_CN.UTF-8 \
     LC_ALL=${LANG} \
@@ -76,7 +76,6 @@ RUN echo "#!/bin/bash\n" > /root/startup.sh && \
 
 # 用户目录不使用中文
 RUN LANG=C xdg-user-dirs-update --force
-
 
 # 导出特定端口
 EXPOSE 22 5900 3389 6001 6002 6003 6004 6005 6006 6007 6008 6009
